@@ -252,7 +252,7 @@ class SoundTab extends React.Component {
                 onDeleteClick={this.handleDeleteSound}
                 onDrop={this.handleDrop}
                 onDuplicateClick={this.handleDuplicateSound}
-                onExportClick={this.handleExportSound}
+                onExportClick={(window.projectInfo && (window.projectInfo.canSave || window.projectInfo.is_editable)) ? this.handleExportSound: null}
                 onItemClick={this.handleSelectSound}
             >
                 {sprite.sounds && sprite.sounds[this.state.selectedSoundIndex] ? (

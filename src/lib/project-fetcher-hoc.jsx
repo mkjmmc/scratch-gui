@@ -23,6 +23,7 @@ import {
 import log from './log';
 import storage from './storage';
 
+
 /* Higher Order Component to provide behavior for loading projects by id. If
  * there's no id, the default project is loaded.
  * @param {React.Component} WrappedComponent component to receive projectData prop
@@ -37,6 +38,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
             ]);
             storage.setProjectHost(props.projectHost);
             storage.setAssetHost(props.assetHost);
+            storage.setAuthorization(props.authorization);
             storage.setTranslatorFunction(props.intl.formatMessage);
             // props.projectId might be unset, in which case we use our default;
             // or it may be set by an even higher HOC, and passed to us.
@@ -48,6 +50,8 @@ const ProjectFetcherHOC = function (WrappedComponent) {
                 typeof props.projectId !== 'undefined'
             ) {
                 this.props.setProjectId(props.projectId.toString());
+            } else {
+                this.props.setProjectId('0');
             }
         }
         componentDidUpdate (prevProps) {
@@ -56,6 +60,9 @@ const ProjectFetcherHOC = function (WrappedComponent) {
             }
             if (prevProps.assetHost !== this.props.assetHost) {
                 storage.setAssetHost(this.props.assetHost);
+            }
+            if (prevProps.authorization !== this.props.authorization) {
+                storage.setAuthorization(this.props.authorization);
             }
             if (this.props.isFetchingWithId && !prevProps.isFetchingWithId) {
                 this.fetchProject(this.props.reduxProjectId, this.props.loadingState);
@@ -134,14 +141,18 @@ const ProjectFetcherHOC = function (WrappedComponent) {
         projectHost: 'https://projects.scratch.mit.edu'
     };
 
-    const mapStateToProps = state => ({
-        isCreatingNew: getIsCreatingNew(state.scratchGui.projectState.loadingState),
-        isFetchingWithId: getIsFetchingWithId(state.scratchGui.projectState.loadingState),
-        isLoadingProject: getIsLoading(state.scratchGui.projectState.loadingState),
-        isShowingProject: getIsShowingProject(state.scratchGui.projectState.loadingState),
-        loadingState: state.scratchGui.projectState.loadingState,
-        reduxProjectId: state.scratchGui.projectState.projectId
-    });
+    const mapStateToProps = state => {
+        const user = state.session && state.session.session && state.session.session.user;
+        return {
+            isCreatingNew: getIsCreatingNew(state.scratchGui.projectState.loadingState),
+            isFetchingWithId: getIsFetchingWithId(state.scratchGui.projectState.loadingState),
+            isLoadingProject: getIsLoading(state.scratchGui.projectState.loadingState),
+            isShowingProject: getIsShowingProject(state.scratchGui.projectState.loadingState),
+            loadingState: state.scratchGui.projectState.loadingState,
+            reduxProjectId: state.scratchGui.projectState.projectId,
+            authorization: user ? user.login_key : null
+        }
+    };
     const mapDispatchToProps = dispatch => ({
         onActivateTab: tab => dispatch(activateTab(tab)),
         onError: error => dispatch(projectError(error)),

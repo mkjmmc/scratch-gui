@@ -35,8 +35,17 @@ class Storage extends ScratchStorage {
     setProjectHost (projectHost) {
         this.projectHost = projectHost;
     }
+    setAuthorization(authorization) {
+        this.authorization = authorization;
+    }
     getProjectGetConfig (projectAsset) {
-        return `${this.projectHost}/${projectAsset.assetId}`;
+        return {
+            url: `${this.projectHost}/${projectAsset.assetId}`,
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': this.authorization
+            },
+        };
     }
     getProjectCreateConfig () {
         return {
@@ -64,7 +73,7 @@ class Storage extends ScratchStorage {
             // Then when storage finds this config to use for the "update", still POSTs
             method: 'post',
             url: `${this.assetHost}/${asset.assetId}.${asset.dataFormat}`,
-            withCredentials: true
+            withCredentials: false
         };
     }
     setTranslatorFunction (translator) {

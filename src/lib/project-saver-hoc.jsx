@@ -1,8 +1,10 @@
 import bindAll from 'lodash.bindall';
 import React from 'react';
 import PropTypes from 'prop-types';
+import queryString from 'query-string';
 import {connect} from 'react-redux';
 import VM from 'scratch-vm';
+import xhr from 'xhr';
 
 import collectMetadata from '../lib/collect-metadata';
 import log from '../lib/log';
@@ -31,7 +33,8 @@ import {
     getIsShowingWithId,
     getIsShowingWithoutId,
     getIsUpdating,
-    projectError
+    projectError,
+    setProjectId
 } from '../reducers/project-state';
 
 /**
@@ -155,11 +158,14 @@ const ProjectSaverHOC = function (WrappedComponent) {
         updateProjectToStorage () {
             this.props.onShowSavingAlert();
             return this.storeProject(this.props.reduxProjectId)
-                .then(() => {
+                .then((res) => {
                     // there's an http response object available here, but we don't need to examine
                     // it, because there are no values contained in it that we care about
+                    console.log(res)
+
                     this.props.onUpdatedProject(this.props.loadingState);
                     this.props.onShowSaveSuccessAlert();
+                    this.props.setProjectId(res.id);
                 })
                 .catch(err => {
                     // Always show the savingError alert because it gives the
@@ -172,6 +178,7 @@ const ProjectSaverHOC = function (WrappedComponent) {
             return this.storeProject(null)
                 .then(response => {
                     this.props.onCreatedProject(response.id.toString(), this.props.loadingState);
+                    window.location.href = `/projects/${response.id.toString()}`;
                 })
                 .catch(err => {
                     this.props.onShowAlert('creatingError');
@@ -199,11 +206,13 @@ const ProjectSaverHOC = function (WrappedComponent) {
             return this.storeProject(null, {
                 originalId: this.props.reduxProjectId,
                 isRemix: 1,
-                title: this.props.reduxProjectTitle
+                title: this.props.reduxProjectTitle,
+                task_id: window.projectInfo.task_id
             })
                 .then(response => {
                     this.props.onCreatedProject(response.id.toString(), this.props.loadingState);
                     this.props.onShowRemixSuccessAlert();
+                    window.location.href = `/projects/${response.id.toString()}`;
                 })
                 .catch(err => {
                     this.props.onShowAlert('creatingError');
@@ -244,7 +253,13 @@ const ProjectSaverHOC = function (WrappedComponent) {
                     })
                 )
             )
-                .then(() => this.props.onUpdateProjectData(projectId, savedVMState, requestParams))
+                .then(() => this.props.onUpdateProjectData(
+                    projectId,
+                    savedVMState,
+                    requestParams,
+                    this.props.reduxProjectTitle,
+                    this.props.authorization
+                ))
                 .then(response => {
                     this.props.onSetProjectUnchanged();
                     const id = response.id.toString();
@@ -400,6 +415,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
     const mapStateToProps = (state, ownProps) => {
         const loadingState = state.scratchGui.projectState.loadingState;
         const isShowingWithId = getIsShowingWithId(loadingState);
+        // console.log(state.session)
+        const user = state.session && state.session.session && state.session.session.user;
         return {
             autoSaveTimeoutId: state.scratchGui.timeout.autoSaveTimeoutId,
             isAnyCreatingNewState: getIsAnyCreatingNewState(loadingState),
@@ -417,7 +434,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
             projectChanged: state.scratchGui.projectChanged,
             reduxProjectId: state.scratchGui.projectState.projectId,
             reduxProjectTitle: state.scratchGui.projectTitle,
-            vm: state.scratchGui.vm
+            vm: state.scratchGui.vm,
+            authorization: user ? user.login_key : null
         };
     };
     const mapDispatchToProps = dispatch => ({
@@ -434,7 +452,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
         onShowSaveSuccessAlert: () => showAlertWithTimeout(dispatch, 'saveSuccess'),
         onShowSavingAlert: () => showAlertWithTimeout(dispatch, 'saving'),
         onUpdatedProject: loadingState => dispatch(doneUpdatingProject(loadingState)),
-        setAutoSaveTimeoutId: id => dispatch(setAutoSaveTimeoutId(id))
+        setAutoSaveTimeoutId: id => dispatch(setAutoSaveTimeoutId(id)),
+        setProjectId: projectId => dispatch(setProjectId(projectId)),
     });
     // Allow incoming props to override redux-provided props. Used to mock in tests.
     const mergeProps = (stateProps, dispatchProps, ownProps) => Object.assign(

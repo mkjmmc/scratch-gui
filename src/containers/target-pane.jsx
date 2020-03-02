@@ -227,7 +227,7 @@ class TargetPane extends React.Component {
                 onDeleteSprite={this.handleDeleteSprite}
                 onDrop={this.handleDrop}
                 onDuplicateSprite={this.handleDuplicateSprite}
-                onExportSprite={this.handleExportSprite}
+                onExportSprite={(window.projectInfo && (window.projectInfo.canSave || window.projectInfo.is_editable)) ? this.handleExportSprite : null}
                 onFileUploadClick={this.handleFileUploadClick}
                 onPaintSpriteClick={this.handlePaintSpriteClick}
                 onSelectSprite={this.handleSelectSprite}

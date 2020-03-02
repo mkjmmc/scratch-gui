@@ -14,21 +14,26 @@ import storage from '../lib/storage';
  * @property {?string} params.title the title of the project.
  * @return {Promise} A promise that resolves when the network request resolves.
  */
-export default function (projectId, vmState, params) {
+export default function (projectId, vmState, params, title, authorization) {
     const opts = {
-        body: vmState,
+        body: JSON.stringify({
+            title: title,
+            data: vmState
+        }),
         // If we set json:true then the body is double-stringified, so don't
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'authorization': authorization
         },
         withCredentials: true
     };
-    const creatingProject = projectId === null || typeof projectId === 'undefined';
+    const creatingProject = projectId === null || projectId === '0' || typeof projectId === 'undefined';
     const queryParams = {};
     if (params.hasOwnProperty('originalId')) queryParams.original_id = params.originalId;
     if (params.hasOwnProperty('isCopy')) queryParams.is_copy = params.isCopy;
     if (params.hasOwnProperty('isRemix')) queryParams.is_remix = params.isRemix;
     if (params.hasOwnProperty('title')) queryParams.title = params.title;
+    if (params.hasOwnProperty('task_id')) queryParams.task_id = params.task_id;
     let qs = queryString.stringify(queryParams);
     if (qs) qs = `?${qs}`;
     if (creatingProject) {
@@ -42,6 +47,7 @@ export default function (projectId, vmState, params) {
             url: `${storage.projectHost}/${projectId}${qs}`
         });
     }
+    console.log(opts);
     return new Promise((resolve, reject) => {
         xhr(opts, (err, response) => {
             if (err) return reject(err);
@@ -53,10 +59,10 @@ export default function (projectId, vmState, params) {
             } catch (e) {
                 return reject(e);
             }
-            body.id = projectId;
-            if (creatingProject) {
-                body.id = body['content-name'];
-            }
+            // body.id = projectId;
+            // if (creatingProject) {
+            //     body.id = body['content-name'];
+            // }
             resolve(body);
         });
     });

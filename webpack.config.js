@@ -107,7 +107,9 @@ module.exports = [
         },
         output: {
             path: path.resolve(__dirname, 'build'),
-            filename: '[name].js'
+            filename: '[name].js',
+            // publicPath: 'http://scratch.yunqilab.com/'
+            publicPath: "https://yzsteam.oss-cn-hangzhou.aliyuncs.com/"
         },
         externals: {
             React: 'react',
@@ -193,7 +195,8 @@ module.exports = [
             output: {
                 libraryTarget: 'umd',
                 path: path.resolve('dist'),
-                publicPath: `${STATIC_PATH}/`
+                // publicPath: `${STATIC_PATH}/`
+                publicPath: "https://yzsteam.oss-cn-hangzhou.aliyuncs.com/"
             },
             externals: {
                 React: 'react',

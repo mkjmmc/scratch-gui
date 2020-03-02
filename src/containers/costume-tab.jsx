@@ -336,7 +336,7 @@ class CostumeTab extends React.Component {
                     this.handleDeleteCostume : null}
                 onDrop={this.handleDrop}
                 onDuplicateClick={this.handleDuplicateCostume}
-                onExportClick={this.handleExportCostume}
+                onExportClick={(window.projectInfo && (window.projectInfo.canSave || window.projectInfo.is_editable)) ? this.handleExportCostume: null}
                 onItemClick={this.handleSelectCostume}
             >
                 {target.costumes ?

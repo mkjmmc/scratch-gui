@@ -10,6 +10,10 @@ import {setPlayer, setFullScreen} from '../reducers/mode.js';
 
 import locales from 'scratch-l10n';
 import {detectLocale} from './detect-locale';
+import cookies from 'js-cookie';
+
+import sessionReducer,{setSession, sessionInitialState} from "../reducers/session";
+import {getIdeAccountInfo} from './ide-account-api';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -69,11 +73,13 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
                 reducers = {
                     locales: localesReducer,
                     scratchGui: guiReducer,
-                    scratchPaint: ScratchPaintReducer
+                    scratchPaint: ScratchPaintReducer,
+                    session: sessionReducer
                 };
                 initialState = {
                     locales: initializedLocales,
-                    scratchGui: initializedGui
+                    scratchGui: initializedGui,
+                    session: sessionInitialState
                 };
                 enhancer = composeEnhancers(guiMiddleware);
             }
@@ -83,6 +89,22 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
                 initialState,
                 enhancer
             );
+            let that = this;
+
+            // 获取登录用户信息
+            const authorization = cookies.get('authorization');
+            if (authorization) {
+                getIdeAccountInfo(authorization)
+                    .then(res => {
+                        this.store.dispatch(setSession(res));
+
+                        storage.setAuthorization(res.session.user.login_key);
+
+                    })
+                    .catch(() => {
+
+                    });
+            }
         }
         componentDidUpdate (prevProps) {
             if (localesOnly) return;
