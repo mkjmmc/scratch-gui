@@ -178,7 +178,7 @@ const ProjectSaverHOC = function (WrappedComponent) {
             return this.storeProject(null)
                 .then(response => {
                     this.props.onCreatedProject(response.id.toString(), this.props.loadingState);
-                    window.location.href = `/projects/${response.id.toString()}`;
+                    window.location.href = `/my/projects/${response.id.toString()}`;
                 })
                 .catch(err => {
                     this.props.onShowAlert('creatingError');
@@ -212,7 +212,7 @@ const ProjectSaverHOC = function (WrappedComponent) {
                 .then(response => {
                     this.props.onCreatedProject(response.id.toString(), this.props.loadingState);
                     this.props.onShowRemixSuccessAlert();
-                    window.location.href = `/projects/${response.id.toString()}`;
+                    window.location.href = `/my/projects/${response.id.toString()}`;
                 })
                 .catch(err => {
                     this.props.onShowAlert('creatingError');

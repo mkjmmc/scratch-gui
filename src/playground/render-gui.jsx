@@ -12,12 +12,11 @@ import AliOSS from 'ali-oss';
 
 
 // const apiHost = 'http://localhost:4002';
-const apiHost = 'https://scratch.yzsteam.com';
-const assetHost = 'https://assets.scratch.yzsteam.com';
-// const assetHost = 'http://localhost:8801';
+const apiHost = 'https://scratch.yunqilab.cn';
+const assetHost = 'https://assets.scratch.yunqilab.cn';
 
 const onClickLogo = () => {
-    window.location = 'https://scratch.yzsteam.com/myprojects';
+    window.location = 'https://scratch.yunqilab.cn';
 };
 
 const handleTelemetryModalCancel = () => {
@@ -54,7 +53,7 @@ const handleUpdateProjectThumbnail = (id, data) => {
             accessKeyId: body.AccessKeyId,
             accessKeySecret: body.AccessKeySecret,
             stsToken: body.SecurityToken,
-            bucket: 'yzsteam'
+            bucket: 'yunheng-blockly'
         });
         client.multipartUpload(body.key, data)
             .then(result => {
@@ -87,11 +86,11 @@ const handleUpdateProjectThumbnail = (id, data) => {
     })
 };
 
-const handleLogOut = () => {
-    let config = window.location.host.endsWith('yzsteam.com') ? {'domain': 'yzsteam.com'} : {};
-    cookies.remove('authorization', config);
+const handleLogOut = ()=>{
+    let  config = window.location.host.endsWith('yunqilab.cn') ? {'domain': 'yunqilab.cn',expires: 7} : {expires: 7};
+    cookies.remove('authorization',config);
 
-    window.location.href = '/';
+    window.location.href= '/'
 };
 
 /*

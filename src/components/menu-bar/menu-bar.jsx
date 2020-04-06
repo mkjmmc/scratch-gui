@@ -71,7 +71,7 @@ import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 
 // import scratchLogo from './scratch-logo.svg';
-import scratchLogo from './logo2.png';
+import scratchLogo from './logo.png';
 import {setProjectTitle} from "../../reducers/project-title";
 
 import sharedMessages from '../../lib/shared-messages';
@@ -324,7 +324,7 @@ class MenuBar extends React.Component {
                     <div className={styles.fileGroup}>
                         <div className={classNames(styles.menuBarItem)}>
                             <img
-                                alt="小码蚁创意中心"
+                                alt="云启智库少儿编程"
                                 className={classNames(styles.scratchLogo, {
                                     [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                 })}
@@ -577,7 +577,7 @@ class MenuBar extends React.Component {
                         this.props.username ? (
                             // ************ user is logged in ************
                             <React.Fragment>
-                                <a href="/myprojects">
+                                <a href="/my">
                                     <div
                                         className={classNames(
                                             styles.menuBarItem,

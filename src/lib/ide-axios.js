@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // axios.defaults.baseURL = 'http://ide-server.yunqilab.com';
 // axios.defaults.baseURL = 'http://localhost:4002/api';
-axios.defaults.baseURL = 'https://scratch.yzsteam.com/api';
+axios.defaults.baseURL = 'https://scratch.yunqilab.cn/api';
 
 // 拦截request,设置全局请求为ajax请求
 axios.interceptors.request.use(config => {
