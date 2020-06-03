@@ -3414,11 +3414,6 @@
             ],
             "volume": 100,
             "layerOrder": 6,
-<<<<<<< HEAD
-            "visible": true,
-            "x": -6,
-            "y": 13,
-=======
             "visible": true,
             "x": -6,
             "y": 13,
@@ -3592,16 +3587,11 @@
             "visible": true,
             "x": -102,
             "y": -23.999999999999993,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Champ99"
-=======
             "objName": "Characters 1"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {
@@ -3625,8 +3615,6 @@
         ],
         "json": {
             "isStage": false,
-<<<<<<< HEAD
-=======
             "name": "Characters 2",
             "variables": {},
             "lists": {},
@@ -3763,7 +3751,6 @@
         ],
         "json": {
             "isStage": false,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "name": "Cheesy Puffs",
             "variables": {},
             "lists": {},
@@ -7544,7 +7531,6 @@
                     "dataFormat": "png",
                     "rotationCenterX": 74,
                     "rotationCenterY": 200
-<<<<<<< HEAD
                 }
             ],
             "sounds": [
@@ -7558,21 +7544,6 @@
                     "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
                 }
             ],
-=======
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-                    "name": "pop",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 1032,
-                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-                }
-            ],
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "volume": 100,
             "layerOrder": 12,
             "visible": true,
@@ -9234,31 +9205,6 @@
             "comments": {},
             "currentCostume": 0,
             "costumes": [
-<<<<<<< HEAD
-                {
-                    "assetId": "57c6d7dc148576cb2f36e53dea49260a",
-                    "name": "guitar-electric1-a",
-                    "bitmapResolution": 1,
-                    "md5ext": "57c6d7dc148576cb2f36e53dea49260a.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 42,
-                    "rotationCenterY": 85
-                },
-                {
-                    "assetId": "677aed0b1168caf4b3ec565b9104dbe0",
-                    "name": "guitar-electric1-b",
-                    "bitmapResolution": 1,
-                    "md5ext": "677aed0b1168caf4b3ec565b9104dbe0.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 42,
-                    "rotationCenterY": 85
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "0d340de02e14bebaf8dfa0e43eb3f1f9",
-                    "name": "C Elec Guitar",
-=======
                 {
                     "assetId": "57c6d7dc148576cb2f36e53dea49260a",
                     "name": "guitar-electric1-a",
@@ -9291,80 +9237,37 @@
                 {
                     "assetId": "1b5de9866801eb2f9d4f57c7c3b473f5",
                     "name": "D Elec Guitar",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "0d340de02e14bebaf8dfa0e43eb3f1f9.wav"
-                },
-                {
-                    "assetId": "1b5de9866801eb2f9d4f57c7c3b473f5",
-                    "name": "D Elec Guitar",
-=======
                     "md5ext": "1b5de9866801eb2f9d4f57c7c3b473f5.wav"
                 },
                 {
                     "assetId": "2e6a6ae3e0f72bf78c74def8130f459a",
                     "name": "E Elec Guitar",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "1b5de9866801eb2f9d4f57c7c3b473f5.wav"
-                },
-                {
-                    "assetId": "2e6a6ae3e0f72bf78c74def8130f459a",
-                    "name": "E Elec Guitar",
-=======
                     "md5ext": "2e6a6ae3e0f72bf78c74def8130f459a.wav"
                 },
                 {
                     "assetId": "5eb00f15f21f734986aa45156d44478d",
                     "name": "F Elec Guitar",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "2e6a6ae3e0f72bf78c74def8130f459a.wav"
-                },
-                {
-                    "assetId": "5eb00f15f21f734986aa45156d44478d",
-                    "name": "F Elec Guitar",
-=======
                     "md5ext": "5eb00f15f21f734986aa45156d44478d.wav"
                 },
                 {
                     "assetId": "cd0d0e7dad415b2ffa2ba7a61860eaf8",
                     "name": "G Elec Guitar",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "5eb00f15f21f734986aa45156d44478d.wav"
-                },
-                {
-                    "assetId": "cd0d0e7dad415b2ffa2ba7a61860eaf8",
-                    "name": "G Elec Guitar",
-=======
-                    "md5ext": "cd0d0e7dad415b2ffa2ba7a61860eaf8.wav"
-                },
-                {
-                    "assetId": "fa5f7fea601e9368dd68449d9a54c995",
-                    "name": "A Elec Guitar",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 88200,
-<<<<<<< HEAD
                     "md5ext": "cd0d0e7dad415b2ffa2ba7a61860eaf8.wav"
                 },
                 {
@@ -9377,11 +9280,6 @@
                     "md5ext": "fa5f7fea601e9368dd68449d9a54c995.wav"
                 },
                 {
-=======
-                    "md5ext": "fa5f7fea601e9368dd68449d9a54c995.wav"
-                },
-                {
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "assetId": "81f142d0b00189703d7fe9b1f13f6f87",
                     "name": "B Elec Guitar",
                     "dataFormat": "wav",
@@ -11287,31 +11185,6 @@
             "comments": {},
             "currentCostume": 0,
             "costumes": [
-<<<<<<< HEAD
-                {
-                    "assetId": "0ad880b5e829578832c8927b3f6ef7f8",
-                    "name": "keyboard-a",
-                    "bitmapResolution": 1,
-                    "md5ext": "0ad880b5e829578832c8927b3f6ef7f8.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 72,
-                    "rotationCenterY": 68
-                },
-                {
-                    "assetId": "6efd23c91dab070526feacdf72e2d3da",
-                    "name": "keyboard-b",
-                    "bitmapResolution": 1,
-                    "md5ext": "6efd23c91dab070526feacdf72e2d3da.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 72,
-                    "rotationCenterY": 68
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "8366ee963cc57ad24a8a35a26f722c2b",
-                    "name": "C Elec Piano",
-=======
                 {
                     "assetId": "0ad880b5e829578832c8927b3f6ef7f8",
                     "name": "keyboard-a",
@@ -11353,97 +11226,37 @@
                 {
                     "assetId": "ab3c198f8e36efff14f0a5bad35fa3cd",
                     "name": "E Elec Piano",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "8366ee963cc57ad24a8a35a26f722c2b.wav"
-                },
-                {
-                    "assetId": "835f136ca8d346a17b4d4baf8405be37",
-                    "name": "D Elec Piano",
-=======
                     "md5ext": "ab3c198f8e36efff14f0a5bad35fa3cd.wav"
                 },
                 {
                     "assetId": "dc5e368fc0d0dad1da609bfc3e29aa15",
                     "name": "F Elec Piano",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "835f136ca8d346a17b4d4baf8405be37.wav"
-                },
-                {
-                    "assetId": "ab3c198f8e36efff14f0a5bad35fa3cd",
-                    "name": "E Elec Piano",
-=======
                     "md5ext": "dc5e368fc0d0dad1da609bfc3e29aa15.wav"
                 },
                 {
                     "assetId": "39525f6545d62a95d05153f92d63301a",
                     "name": "G Elec Piano",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "ab3c198f8e36efff14f0a5bad35fa3cd.wav"
-                },
-                {
-                    "assetId": "dc5e368fc0d0dad1da609bfc3e29aa15",
-                    "name": "F Elec Piano",
-=======
                     "md5ext": "39525f6545d62a95d05153f92d63301a.wav"
                 },
                 {
                     "assetId": "0cfa8e84d6a5cd63afa31d541625a9ef",
                     "name": "A Elec Piano",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "dataFormat": "wav",
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "dc5e368fc0d0dad1da609bfc3e29aa15.wav"
-                },
-                {
-                    "assetId": "39525f6545d62a95d05153f92d63301a",
-                    "name": "G Elec Piano",
-=======
-                    "md5ext": "0cfa8e84d6a5cd63afa31d541625a9ef.wav"
-                },
-                {
-                    "assetId": "9cc77167419f228503dd57fddaa5b2a6",
-                    "name": "B Elec Piano",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 88200,
-<<<<<<< HEAD
-                    "md5ext": "39525f6545d62a95d05153f92d63301a.wav"
-                },
-                {
-                    "assetId": "0cfa8e84d6a5cd63afa31d541625a9ef",
-                    "name": "A Elec Piano",
-=======
-                    "md5ext": "9cc77167419f228503dd57fddaa5b2a6.wav"
-                },
-                {
-                    "assetId": "366c7edbd4dd5cca68bf62902999bd66",
-                    "name": "C2 Elec Piano",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 88200,
-<<<<<<< HEAD
                     "md5ext": "0cfa8e84d6a5cd63afa31d541625a9ef.wav"
                 },
                 {
@@ -11462,15 +11275,6 @@
                     "format": "",
                     "rate": 44100,
                     "sampleCount": 88200,
-                    "md5ext": "366c7edbd4dd5cca68bf62902999bd66.wav"
-                }
-            ],
-            "volume": 100,
-            "layerOrder": 11,
-            "visible": true,
-            "x": 135,
-            "y": -90,
-=======
                     "md5ext": "366c7edbd4dd5cca68bf62902999bd66.wav"
                 }
             ],
@@ -11559,16 +11363,11 @@
             "visible": true,
             "x": 211.99999999999997,
             "y": 39.00000000000001,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Keyboard"
-=======
             "objName": "Kia"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {
@@ -12343,11 +12142,6 @@
             ],
             "volume": 100,
             "layerOrder": 1,
-<<<<<<< HEAD
-            "visible": true,
-            "x": -143,
-            "y": -14,
-=======
             "visible": true,
             "x": -143,
             "y": -14,
@@ -12431,16 +12225,11 @@
             "visible": true,
             "x": 179,
             "y": 17,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Llama"
-=======
             "objName": "Luca"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {
@@ -12784,7 +12573,6 @@
             "comments": {},
             "currentCostume": 0,
             "costumes": [
-<<<<<<< HEAD
                 {
                     "assetId": "d4d80e94e2cc759b8ca1d7b58f2a9052",
                     "name": "microphone-a",
@@ -12878,101 +12666,6 @@
                     "md5ext": "725e29369e9138a43f11e0e5eb3eb562.wav"
                 },
                 {
-=======
-                {
-                    "assetId": "d4d80e94e2cc759b8ca1d7b58f2a9052",
-                    "name": "microphone-a",
-                    "bitmapResolution": 1,
-                    "md5ext": "d4d80e94e2cc759b8ca1d7b58f2a9052.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 40,
-                    "rotationCenterY": 88
-                },
-                {
-                    "assetId": "c96578ffb9e314fee097862d69fde0af",
-                    "name": "microphone-b",
-                    "bitmapResolution": 1,
-                    "md5ext": "c96578ffb9e314fee097862d69fde0af.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 40,
-                    "rotationCenterY": 88
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "28153621d293c86da0b246d314458faf",
-                    "name": "Bass Beatbox",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 13440,
-                    "md5ext": "28153621d293c86da0b246d314458faf.wav"
-                },
-                {
-                    "assetId": "abc70bb390f8e55f22f32265500d814a",
-                    "name": "Clap Beatbox",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 8448,
-                    "md5ext": "abc70bb390f8e55f22f32265500d814a.wav"
-                },
-                {
-                    "assetId": "5a07847bf246c227204728b05a3fc8f3",
-                    "name": "Hi Beatbox",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 11712,
-                    "md5ext": "5a07847bf246c227204728b05a3fc8f3.wav"
-                },
-                {
-                    "assetId": "859249563a7b1fc0f6e92e36d1db81c7",
-                    "name": "Scratch Beatbox",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 23104,
-                    "md5ext": "859249563a7b1fc0f6e92e36d1db81c7.wav"
-                },
-                {
-                    "assetId": "c642c4c00135d890998f351faec55498",
-                    "name": "Snare Beatbox",
-                    "dataFormat": "wav",
-                    "format": "adpcm",
-                    "rate": 22050,
-                    "sampleCount": 6097,
-                    "md5ext": "c642c4c00135d890998f351faec55498.wav"
-                },
-                {
-                    "assetId": "7ede1382b578d8fc32850b48d082d914",
-                    "name": "Snare Beatbox2",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 9920,
-                    "md5ext": "7ede1382b578d8fc32850b48d082d914.wav"
-                },
-                {
-                    "assetId": "9021b7bb06f2399f18e2db4fb87095dc",
-                    "name": "Wah Beatbox",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 13248,
-                    "md5ext": "9021b7bb06f2399f18e2db4fb87095dc.wav"
-                },
-                {
-                    "assetId": "725e29369e9138a43f11e0e5eb3eb562",
-                    "name": "Crash Beatbox",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 53766,
-                    "md5ext": "725e29369e9138a43f11e0e5eb3eb562.wav"
-                },
-                {
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                     "assetId": "e1f32c057411da4237181ce72ae15d23",
                     "name": "Wub Beatbox",
                     "dataFormat": "wav",
@@ -13594,17 +13287,6 @@
             "blocks": {},
             "comments": {},
             "currentCostume": 0,
-<<<<<<< HEAD
-            "costumes": [
-                {
-                    "assetId": "592816f56409d582603c485cbefcbbb8",
-                    "name": "neigh pony",
-                    "bitmapResolution": 1,
-                    "md5ext": "592816f56409d582603c485cbefcbbb8.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 74,
-                    "rotationCenterY": 78
-=======
             "costumes": [
                 {
                     "assetId": "592816f56409d582603c485cbefcbbb8",
@@ -13694,27 +13376,10 @@
                     "dataFormat": "svg",
                     "rotationCenterX": 50.673619073816894,
                     "rotationCenterY": 130.25802625960853
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                 }
             ],
             "sounds": [
                 {
-<<<<<<< HEAD
-                    "assetId": "45ffcf97ee2edca0199ff5aa71a5b72e",
-                    "name": "horse",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 57856,
-                    "md5ext": "45ffcf97ee2edca0199ff5aa71a5b72e.wav"
-                }
-            ],
-            "volume": 100,
-            "layerOrder": 27,
-            "visible": true,
-            "x": 3,
-            "y": 37,
-=======
                     "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
                     "name": "Pop",
                     "dataFormat": "wav",
@@ -13729,16 +13394,11 @@
             "visible": true,
             "x": 154,
             "y": -19,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Neigh Pony"
-=======
             "objName": "Noor"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {
@@ -14674,7 +14334,6 @@
                     "dataFormat": "svg",
                     "rotationCenterX": 48,
                     "rotationCenterY": 61
-<<<<<<< HEAD
                 }
             ],
             "sounds": [
@@ -14688,21 +14347,6 @@
                     "md5ext": "3b8236bbb288019d93ae38362e865972.wav"
                 }
             ],
-=======
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "3b8236bbb288019d93ae38362e865972",
-                    "name": "Chirp",
-                    "dataFormat": "wav",
-                    "format": "adpcm",
-                    "rate": 22050,
-                    "sampleCount": 6097,
-                    "md5ext": "3b8236bbb288019d93ae38362e865972.wav"
-                }
-            ],
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "volume": 100,
             "layerOrder": 24,
             "visible": true,
@@ -16244,7 +15888,6 @@
                     "dataFormat": "svg",
                     "rotationCenterX": 57.220799012796846,
                     "rotationCenterY": 85.12261084456834
-<<<<<<< HEAD
                 }
             ],
             "sounds": [
@@ -16276,39 +15919,6 @@
                     "md5ext": "27654ed2e3224f0a3f77c244e4fae9aa.wav"
                 }
             ],
-=======
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "ff8b8c3bf841a11fd5fe3afaa92be1b5",
-                    "name": "space ripple",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 164596,
-                    "md5ext": "ff8b8c3bf841a11fd5fe3afaa92be1b5.wav"
-                },
-                {
-                    "assetId": "46571f8ec0f2cc91666c80e312579082",
-                    "name": "laser1",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 2064,
-                    "md5ext": "46571f8ec0f2cc91666c80e312579082.wav"
-                },
-                {
-                    "assetId": "27654ed2e3224f0a3f77c244e4fae9aa",
-                    "name": "laser2",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 3020,
-                    "md5ext": "27654ed2e3224f0a3f77c244e4fae9aa.wav"
-                }
-            ],
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "volume": 100,
             "layerOrder": 5,
             "visible": true,
@@ -16627,11 +16237,6 @@
             ],
             "volume": 100,
             "layerOrder": 4,
-<<<<<<< HEAD
-            "visible": true,
-            "x": 50,
-            "y": -28,
-=======
             "visible": true,
             "x": 50,
             "y": -28,
@@ -16715,16 +16320,11 @@
             "visible": true,
             "x": 119.00000000000001,
             "y": -50,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Sam"
-=======
             "objName": "Sasha"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {
@@ -17209,7 +16809,6 @@
                     "dataFormat": "svg",
                     "rotationCenterX": 45,
                     "rotationCenterY": 33
-<<<<<<< HEAD
                 }
             ],
             "sounds": [
@@ -17223,21 +16822,6 @@
                     "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
                 }
             ],
-=======
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-                    "name": "pop",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 1032,
-                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-                }
-            ],
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "volume": 100,
             "layerOrder": 2,
             "visible": true,
@@ -17866,7 +17450,6 @@
             "comments": {},
             "currentCostume": 0,
             "costumes": [
-<<<<<<< HEAD
                 {
                     "assetId": "b86efb7f23387300cf9037a61f328ab9",
                     "name": "squirrel",
@@ -17888,29 +17471,6 @@
                     "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
                 }
             ],
-=======
-                {
-                    "assetId": "b86efb7f23387300cf9037a61f328ab9",
-                    "name": "squirrel",
-                    "bitmapResolution": 2,
-                    "md5ext": "b86efb7f23387300cf9037a61f328ab9.png",
-                    "dataFormat": "png",
-                    "rotationCenterX": 158,
-                    "rotationCenterY": 146
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "83c36d806dc92327b9e7049a565c6bff",
-                    "name": "meow",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 37376,
-                    "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
-                }
-            ],
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "volume": 100,
             "layerOrder": 5,
             "visible": true,
@@ -18324,8 +17884,6 @@
     {
         "name": "Taco",
         "md5": "383ea1ef802bc2706670536cfa8271b7.svg",
-<<<<<<< HEAD
-=======
         "type": "sprite",
         "tags": [
             "food",
@@ -18483,7 +18041,6 @@
     {
         "name": "Tatiana",
         "md5": "5cf65a9f942ca92c93915527ff9db1e6.svg",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         "type": "sprite",
         "tags": [
             "people",
@@ -18502,11 +18059,7 @@
         ],
         "json": {
             "isStage": false,
-<<<<<<< HEAD
-            "name": "Taco",
-=======
             "name": "Tatiana",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "variables": {},
             "lists": {},
             "broadcasts": {},
@@ -18515,24 +18068,6 @@
             "currentCostume": 0,
             "costumes": [
                 {
-<<<<<<< HEAD
-                    "assetId": "383ea1ef802bc2706670536cfa8271b7",
-                    "name": "Taco",
-                    "bitmapResolution": 1,
-                    "md5ext": "383ea1ef802bc2706670536cfa8271b7.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 78,
-                    "rotationCenterY": 48
-                },
-                {
-                    "assetId": "c97113d17afeaac9f461ea0ec257ef26",
-                    "name": "Taco-wizard",
-                    "bitmapResolution": 1,
-                    "md5ext": "c97113d17afeaac9f461ea0ec257ef26.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 125,
-                    "rotationCenterY": 82
-=======
                     "assetId": "5cf65a9f942ca92c93915527ff9db1e6",
                     "name": "Tatiana-a",
                     "bitmapResolution": 1,
@@ -18567,27 +18102,10 @@
                     "dataFormat": "svg",
                     "rotationCenterX": 49.85653018505951,
                     "rotationCenterY": 55.72124957487232
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
                 }
             ],
             "sounds": [
                 {
-<<<<<<< HEAD
-                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-                    "name": "pop",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 1032,
-                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-                }
-            ],
-            "volume": 100,
-            "layerOrder": 1,
-            "visible": true,
-            "x": 46.00000000000001,
-            "y": 37.99999999999999,
-=======
                     "assetId": "c893b0a9b3e2e0594f1f921a12aa66be",
                     "name": "Footsteps",
                     "dataFormat": "wav",
@@ -18602,26 +18120,16 @@
             "visible": true,
             "x": -8.99999999999999,
             "y": 122.00000000000001,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Taco"
-        }
-    },
-    {
-        "name": "Takeout",
-        "md5": "40f63eb18230c4defa9051830beffb0f.svg",
-=======
             "objName": "Tatiana"
         }
     },
     {
         "name": "Taylor",
         "md5": "ae2eaae0882543dc276c8e7d56ff2e7b.svg",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         "type": "sprite",
         "tags": [
             "people",
@@ -18640,11 +18148,7 @@
         ],
         "json": {
             "isStage": false,
-<<<<<<< HEAD
-            "name": "Takeout",
-=======
             "name": "Taylor",
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "variables": {},
             "lists": {},
             "broadcasts": {},
@@ -18653,69 +18157,6 @@
             "currentCostume": 0,
             "costumes": [
                 {
-<<<<<<< HEAD
-                    "assetId": "40f63eb18230c4defa9051830beffb0f",
-                    "name": "takeout-a",
-                    "bitmapResolution": 1,
-                    "md5ext": "40f63eb18230c4defa9051830beffb0f.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 33,
-                    "rotationCenterY": 41
-                },
-                {
-                    "assetId": "e03cd6e668e0eeddb2da98a095e2f30f",
-                    "name": "takeout-b",
-                    "bitmapResolution": 1,
-                    "md5ext": "e03cd6e668e0eeddb2da98a095e2f30f.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 33,
-                    "rotationCenterY": 42
-                },
-                {
-                    "assetId": "24cc271fd6cf55f25b71e78faf749a98",
-                    "name": "takeout-c",
-                    "bitmapResolution": 1,
-                    "md5ext": "24cc271fd6cf55f25b71e78faf749a98.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 33,
-                    "rotationCenterY": 53
-                },
-                {
-                    "assetId": "2b32d6a4a724c38bfaeb494d30827f19",
-                    "name": "takeout-d",
-                    "bitmapResolution": 1,
-                    "md5ext": "2b32d6a4a724c38bfaeb494d30827f19.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 40,
-                    "rotationCenterY": 42
-                },
-                {
-                    "assetId": "9202a59888545c56c864bacb700c4297",
-                    "name": "takeout-e",
-                    "bitmapResolution": 1,
-                    "md5ext": "9202a59888545c56c864bacb700c4297.svg",
-                    "dataFormat": "svg",
-                    "rotationCenterX": 41,
-                    "rotationCenterY": 35
-                }
-            ],
-            "sounds": [
-                {
-                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-                    "name": "pop",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "rate": 44100,
-                    "sampleCount": 1032,
-                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-                }
-            ],
-            "volume": 100,
-            "layerOrder": 4,
-            "visible": true,
-            "x": -6.000000000000018,
-            "y": 69,
-=======
                     "assetId": "ae2eaae0882543dc276c8e7d56ff2e7b",
                     "name": "Taylor-a",
                     "bitmapResolution": 1,
@@ -18768,16 +18209,11 @@
             "visible": true,
             "x": 2.000000000000007,
             "y": -116.99999999999999,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Takeout"
-=======
             "objName": "Taylor"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {
@@ -19326,11 +18762,6 @@
             ],
             "volume": 100,
             "layerOrder": 46,
-<<<<<<< HEAD
-            "visible": true,
-            "x": 26,
-            "y": -5,
-=======
             "visible": true,
             "x": 26,
             "y": -5,
@@ -19423,16 +18854,11 @@
             "visible": true,
             "x": 5.999999999999982,
             "y": -0.9999999999999964,
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
             "size": 100,
             "direction": 90,
             "draggable": false,
             "rotationStyle": "all around",
-<<<<<<< HEAD
-            "objName": "Trees"
-=======
             "objName": "Trisha"
->>>>>>> 9ed27cffaac7e3462a933e6d001e406ef14db9ad
         }
     },
     {

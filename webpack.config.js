@@ -109,7 +109,7 @@ module.exports = [
             path: path.resolve(__dirname, 'build'),
             filename: '[name].js',
             // publicPath: 'http://scratch.yunqilab.com/'
-            // publicPath: "https://yzsteam.oss-cn-hangzhou.aliyuncs.com/"
+            publicPath: "https://yzsteam.oss-cn-hangzhou.aliyuncs.com/"
         },
         externals: {
             React: 'react',
