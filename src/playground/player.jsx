@@ -12,6 +12,11 @@ import AppStateHOC from '../lib/app-state-hoc.jsx';
 
 import {setPlayer} from '../reducers/mode';
 
+const apiHost = 'http://localhost:4002';
+// const apiHost = 'https://scratch.yzsteam.com';
+const assetHost = 'https://assets.scratch.yzsteam.com';
+
+
 if (process.env.NODE_ENV === 'production' && typeof window === 'object') {
     // Warn before navigating away
     window.onbeforeunload = () => true;
@@ -22,11 +27,24 @@ import styles from './player.css';
 const Player = ({isPlayerOnly, onSeeInside, projectId}) => (
     <Box className={classNames(isPlayerOnly ? styles.stageOnly : styles.editor)}>
         {isPlayerOnly && <button onClick={onSeeInside}>{'See inside'}</button>}
+        {/*<GUI*/}
+            {/*canEditTitle*/}
+            {/*enableCommunity*/}
+            {/*isPlayerOnly={isPlayerOnly}*/}
+            {/*projectId={projectId}*/}
+            {/**/}
+        {/*/>*/}
         <GUI
-            canEditTitle
+            // canEditTitle
             enableCommunity
-            isPlayerOnly={isPlayerOnly}
-            projectId={projectId}
+            isPlayerOnly={true}
+            projectId={"2489"}
+            projectHost={`${apiHost}/api/v1/projects/data`}
+            assetHost={assetHost}
+            cloudHost={"scratch.yzsteam.com/cloud/"}
+            hasCloudPermission={true}
+
+            // store={store}
         />
     </Box>
 );
@@ -55,7 +73,7 @@ const ConnectedPlayer = connect(
 // ability to compose reducers.
 const WrappedPlayer = compose(
     AppStateHOC,
-    HashParserHOC
+    // HashParserHOC
 )(ConnectedPlayer);
 
 const appTarget = document.createElement('div');
