@@ -162,7 +162,7 @@ const guiReducer = combineReducers({
     toolbox: toolboxReducer,
     vm: vmReducer,
     vmStatus: vmStatusReducer,
-    session: sessionReducer
+    session: sessionReducer,
     workspaceMetrics: workspaceMetricsReducer
 });
 
