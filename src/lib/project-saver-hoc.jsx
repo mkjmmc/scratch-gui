@@ -70,6 +70,7 @@ const ProjectSaverHOC = function (WrappedComponent) {
             this.props.onSetProjectSaver(this.tryToAutoSave);
         }
         componentDidUpdate (prevProps) {
+            console.log(prevProps.isCreatingNew, this.props.isCreatingNew)
             if (!this.props.isAnyCreatingNewState && prevProps.isAnyCreatingNewState) {
                 this.reportTelemetryEvent('projectWasCreated');
             }
@@ -99,6 +100,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
             // see if we should "create" the current project on the server
             //
             // don't try to create or save immediately after trying to create
+
+            console.log("prevProps.isCreatingNew", prevProps.isCreatingNew);
             if (prevProps.isCreatingNew) return;
             // if we're newly able to create this project, create it!
             if (this.isShowingCreatable(this.props) && !this.isShowingCreatable(prevProps)) {
@@ -153,6 +156,7 @@ const ProjectSaverHOC = function (WrappedComponent) {
             }
         }
         isShowingCreatable (props) {
+            console.log("isShowingCreatable", props.canCreateNew, props.isShowingWithoutId);
             return props.canCreateNew && props.isShowingWithoutId;
         }
         updateProjectToStorage () {
@@ -175,10 +179,12 @@ const ProjectSaverHOC = function (WrappedComponent) {
                 });
         }
         createNewProjectToStorage () {
+            console.log("createNewProjectToStorage");
             return this.storeProject(null)
                 .then(response => {
+                    // console.log()
                     this.props.onCreatedProject(response.id.toString(), this.props.loadingState);
-                    window.location.href = `/projects/${response.id.toString()}`;
+                    window.location.href = `/scratch/projects/${response.id.toString()}`;
                 })
                 .catch(err => {
                     this.props.onShowAlert('creatingError');
@@ -212,7 +218,7 @@ const ProjectSaverHOC = function (WrappedComponent) {
                 .then(response => {
                     this.props.onCreatedProject(response.id.toString(), this.props.loadingState);
                     this.props.onShowRemixSuccessAlert();
-                    window.location.href = `/projects/${response.id.toString()}`;
+                    window.location.href = `/scratch/projects/${response.id.toString()}`;
                 })
                 .catch(err => {
                     this.props.onShowAlert('creatingError');
@@ -261,6 +267,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
                     this.props.authorization
                 ))
                 .then(response => {
+
+                    console.log(1);
                     this.props.onSetProjectUnchanged();
                     const id = response.id.toString();
                     if (id && this.props.onUpdateProjectThumbnail) {

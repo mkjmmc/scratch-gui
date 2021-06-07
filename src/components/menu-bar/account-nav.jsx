@@ -71,7 +71,7 @@ const AccountNavComponent = ({
                     {/*id="gui.accountMenu.profile"*/}
                 {/*/>*/}
             {/*</MenuItemContainer>*/}
-            <MenuItemContainer href="/myprojects">
+            <MenuItemContainer href="/scratch/myprojects">
                 <span>我的项目</span>
 
             </MenuItemContainer>

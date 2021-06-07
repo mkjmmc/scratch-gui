@@ -74,7 +74,7 @@ import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
 
 // import scratchLogo from './scratch-logo.svg';
-import scratchLogo from './logo2.png';
+import scratchLogo from './logo3.png';
 import {setProjectTitle} from "../../reducers/project-title";
 
 import sharedMessages from '../../lib/shared-messages';
@@ -392,7 +392,7 @@ class MenuBar extends React.Component {
                     <div className={styles.fileGroup}>
                         <div className={classNames(styles.menuBarItem)}>
                             <img
-                                alt="小码蚁创意中心"
+                                alt="小码蚁编程"
                                 className={classNames(styles.scratchLogo, {
                                     [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                 })}
@@ -434,14 +434,14 @@ class MenuBar extends React.Component {
                                     place={this.props.isRtl ? 'left' : 'right'}
                                     onRequestClose={this.props.onRequestCloseFile}
                                 >
-                                    <MenuSection>
-                                        <MenuItem
-                                            isRtl={this.props.isRtl}
-                                            onClick={this.handleClickNew}
-                                        >
-                                            {newProjectMessage}
-                                        </MenuItem>
-                                    </MenuSection>
+                                    {/*<MenuSection>*/}
+                                        {/*<MenuItem*/}
+                                            {/*isRtl={this.props.isRtl}*/}
+                                            {/*onClick={this.handleClickNew}*/}
+                                        {/*>*/}
+                                            {/*{newProjectMessage}*/}
+                                        {/*</MenuItem>*/}
+                                    {/*</MenuSection>*/}
                                     {(this.props.canSave || this.props.canCreateCopy || this.props.canRemix) && (
                                         <MenuSection>
                                             {this.props.canSave && (
@@ -479,7 +479,6 @@ class MenuBar extends React.Component {
                                                 />
                                             </MenuItem>
                                         )}</SB3Downloader>
-                                        ) : []}
                                     </MenuSection>
                                 </MenuBarMenu>
                             </div>
@@ -633,7 +632,7 @@ class MenuBar extends React.Component {
                         this.props.username ? (
                             // ************ user is logged in ************
                             <React.Fragment>
-                                <a href="/myprojects">
+                                <a href="/scratch/myprojects">
                                     <div
                                         className={classNames(
                                             styles.menuBarItem,

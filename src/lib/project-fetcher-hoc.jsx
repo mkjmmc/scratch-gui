@@ -64,7 +64,9 @@ const ProjectFetcherHOC = function (WrappedComponent) {
             if (prevProps.authorization !== this.props.authorization) {
                 storage.setAuthorization(this.props.authorization);
             }
+            console.log("isFetchingWithId",this.props.isFetchingWithId, prevProps.isFetchingWithId);
             if (this.props.isFetchingWithId && !prevProps.isFetchingWithId) {
+                console.log("reduxProjectId",this.props.reduxProjectId, this.props.loadingState );
                 this.fetchProject(this.props.reduxProjectId, this.props.loadingState);
             }
             if (this.props.isShowingProject && !prevProps.isShowingProject) {
@@ -75,9 +77,11 @@ const ProjectFetcherHOC = function (WrappedComponent) {
             }
         }
         fetchProject (projectId, loadingState) {
+            console.log("fetchProject", projectId, loadingState);
             return storage
                 .load(storage.AssetType.Project, projectId, storage.DataFormat.JSON)
                 .then(projectAsset => {
+                    console.log("projectAsset", projectAsset);
                     if (projectAsset) {
                         this.props.onFetchedProjectData(projectAsset.data, loadingState);
                     } else {
@@ -87,6 +91,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
                     }
                 })
                 .catch(err => {
+                    console.log("projectAsset", err);
                     this.props.onError(err);
                     log.error(err);
                 });

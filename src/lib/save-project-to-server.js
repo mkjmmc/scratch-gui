@@ -28,6 +28,7 @@ export default function (projectId, vmState, params, title, authorization) {
         withCredentials: true
     };
     const creatingProject = projectId === null || projectId === '0' || typeof projectId === 'undefined';
+    console.log("creatingProject", creatingProject, projectId);
     const queryParams = {};
     if (params.hasOwnProperty('originalId')) queryParams.original_id = params.originalId;
     if (params.hasOwnProperty('isCopy')) queryParams.is_copy = params.isCopy;
@@ -59,6 +60,7 @@ export default function (projectId, vmState, params, title, authorization) {
             } catch (e) {
                 return reject(e);
             }
+            body.id = body.id.toString();
             // body.id = projectId;
             // if (creatingProject) {
             //     body.id = body['content-name'];

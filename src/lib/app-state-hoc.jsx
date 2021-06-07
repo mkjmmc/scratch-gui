@@ -96,6 +96,7 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
             if (authorization) {
                 getIdeAccountInfo(authorization)
                     .then(res => {
+                        console.log(res);
                         this.store.dispatch(setSession(res));
 
                         storage.setAuthorization(res.session.user.login_key);

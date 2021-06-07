@@ -12,12 +12,13 @@ import AliOSS from 'ali-oss';
 
 
 // const apiHost = 'http://localhost:4002';
-const apiHost = 'https://scratch.yzsteam.com';
+// const apiHost = 'https://scratch.yzsteam.com';
+const apiHost = 'https://xmybc.com';
 const assetHost = 'https://assets.scratch.yzsteam.com';
 // const assetHost = 'http://localhost:8801';
 
 const onClickLogo = () => {
-    window.location = 'https://scratch.yzsteam.com/myprojects';
+    window.location = 'https://xmybc.com/scratch/myprojects';
 };
 
 const handleTelemetryModalCancel = () => {
@@ -88,8 +89,9 @@ const handleUpdateProjectThumbnail = (id, data) => {
 };
 
 const handleLogOut = () => {
-    let config = window.location.host.endsWith('yzsteam.com') ? {'domain': 'yzsteam.com'} : {};
-    cookies.remove('authorization', config);
+    // let config = window.location.host.endsWith('yzsteam.com') ? {'domain': 'yzsteam.com'} : {};
+    // cookies.remove('authorization', config);
+    cookies.remove('authorization');
 
     window.location.href = '/';
 };
@@ -161,6 +163,8 @@ export default appTarget => {
                 assetHost={assetHost}
                 projectId={window.projectId}
                 projectTitle={window.projectInfo.name}
+                cloudHost={`${apiHost}/cloud/`}
+                hasCloudPermission={true}
                 // fetchingProject={true}
                 // reduxProjectId={window.projectId}
                 // isFetchingWithId={true}
