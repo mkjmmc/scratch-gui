@@ -21,6 +21,11 @@ const onClickLogo = () => {
     window.location = 'https://xmybc.com/scratch/myprojects';
 };
 
+const onClickReset = (vm) =>{
+    // console.log(222)
+    window.projectInfo.original_id && vm.downloadProjectId(window.projectInfo.original_id);
+};
+
 const handleTelemetryModalCancel = () => {
     log('User canceled telemetry modal');
 };
@@ -150,14 +155,17 @@ export default appTarget => {
                 backpackVisible={false}
                 showComingSoon={false}
                 backpackHost={backpackHost}
+                canManageFiles={window.projectInfo.canSave}
                 canCreateNew={window.projectInfo.canCreateNew || false}
                 canSave={window.projectInfo.canSave || false}
                 canRemix={window.projectInfo.canRemix || false}
                 canEditTitle={window.projectInfo.canEditTitle || false}
+                canReset={window.projectInfo.canReset || false}
                 authorUsername={window.projectInfo.authorUsername || ''}
                 authorThumbnailUrl={window.projectInfo.authorThumbnailUrl || ''}
                 is_editable={window.projectInfo.is_editable || false}
                 authorId={window.projectInfo.authorId || '0'}
+                onClickReset={onClickReset}
                 onClickLogo={onClickLogo}
                 projectHost={`${apiHost}/api/v1/projects/data`}
                 assetHost={assetHost}

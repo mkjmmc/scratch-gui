@@ -75,13 +75,13 @@ const AccountNavComponent = ({
                 <span>我的项目</span>
 
             </MenuItemContainer>
-            <MenuItemContainer href="/settings">
-                <FormattedMessage
-                    defaultMessage="Account settings"
-                    description="Text to link to my account settings, in the account navigation menu"
-                    id="gui.accountMenu.accountSettings"
-                />
-            </MenuItemContainer>
+            {/*<MenuItemContainer href="/settings">*/}
+                {/*<FormattedMessage*/}
+                    {/*defaultMessage="Account settings"*/}
+                    {/*description="Text to link to my account settings, in the account navigation menu"*/}
+                    {/*id="gui.accountMenu.accountSettings"*/}
+                {/*/>*/}
+            {/*</MenuItemContainer>*/}
             <MenuSection>
                 <MenuItemContainer onClick={onLogOut}>
                     <FormattedMessage

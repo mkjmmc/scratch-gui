@@ -75,6 +75,7 @@ const GUIComponent = props => {
         canCreateCopy,
         canShare,
         canUseCloud,
+        canReset,
         children,
         connectionModalVisible,
         costumeLibraryVisible,
@@ -93,6 +94,7 @@ const GUIComponent = props => {
         onClickAbout,
         onClickAccountNav,
         onCloseAccountNav,
+        onClickReset,
         onLogOut,
         onOpenRegistration,
         onToggleLoginOpen,
@@ -219,6 +221,7 @@ const GUIComponent = props => {
                     canRemix={canRemix}
                     canSave={canSave}
                     canShare={canShare}
+                    canReset={canReset}
                     className={styles.menuBarPosition}
                     enableCommunity={enableCommunity}
                     isShared={isShared}
@@ -229,6 +232,7 @@ const GUIComponent = props => {
                     onClickAccountNav={onClickAccountNav}
                     onClickLogo={onClickLogo}
                     onCloseAccountNav={onCloseAccountNav}
+                    onClickReset={onClickReset}
                     onLogOut={onLogOut}
                     onOpenRegistration={onOpenRegistration}
                     onProjectTelemetryEvent={onProjectTelemetryEvent}
@@ -382,6 +386,7 @@ GUIComponent.propTypes = {
     canSave: PropTypes.bool,
     canShare: PropTypes.bool,
     canUseCloud: PropTypes.bool,
+    canReset: PropTypes.bool,
     cardsVisible: PropTypes.bool,
     children: PropTypes.node,
     costumeLibraryVisible: PropTypes.bool,
@@ -435,6 +440,7 @@ GUIComponent.defaultProps = {
     canManageFiles: true,
     canRemix: false,
     canSave: false,
+    canReset: false,
     canCreateCopy: false,
     canShare: false,
     canUseCloud: false,

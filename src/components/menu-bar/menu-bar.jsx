@@ -173,7 +173,8 @@ class MenuBar extends React.Component {
             'handleLanguageMouseUp',
             'handleRestoreOption',
             'getSaveToComputerHandler',
-            'restoreOptionMessage'
+            'restoreOptionMessage',
+            'handleClickReset'
         ]);
     }
     componentDidMount () {
@@ -196,6 +197,11 @@ class MenuBar extends React.Component {
             this.props.onClickNew(this.props.canSave && this.props.canCreateNew);
         }
         this.props.onRequestCloseFile();
+    }
+    handleClickReset(){
+        // console.log(this.props.vm)
+        // this.props.vm.downloadProjectId(11000)
+        this.props.onClickReset && this.props.onClickReset(this.props.vm);
     }
     handleClickRemix () {
         this.props.onClickRemix();
@@ -457,6 +463,11 @@ class MenuBar extends React.Component {
                                             {this.props.canRemix && (
                                                 <MenuItem onClick={this.handleClickRemix}>
                                                     {remixMessage}
+                                                </MenuItem>
+                                            )}
+                                            {this.props.canReset && (
+                                                <MenuItem onClick={this.handleClickReset}>
+                                                    重新加载
                                                 </MenuItem>
                                             )}
                                         </MenuSection>
@@ -771,6 +782,7 @@ MenuBar.propTypes = {
     canRemix: PropTypes.bool,
     canSave: PropTypes.bool,
     canShare: PropTypes.bool,
+    canReset: PropTypes.bool,
     className: PropTypes.string,
     confirmReadyToReplaceProject: PropTypes.func,
     editMenuOpen: PropTypes.bool,
@@ -802,6 +814,7 @@ MenuBar.propTypes = {
     onClickLogo: PropTypes.func,
     onClickNew: PropTypes.func,
     onClickRemix: PropTypes.func,
+    onClickReset: PropTypes.func,
     onClickSave: PropTypes.func,
     onClickSaveAsCopy: PropTypes.func,
     onLogOut: PropTypes.func,
