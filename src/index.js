@@ -7,6 +7,7 @@ import {setFullScreen, setPlayer} from './reducers/mode';
 import {remixProject} from './reducers/project-state';
 import {setAppElement} from 'react-modal';
 import Box from './components/box/box.jsx';
+import {setRunningState,setStartedState} from './reducers/vm-status';
 
 const guiReducers = {
     locales: LocalesReducer,
@@ -29,5 +30,7 @@ export {
     remixProject,
     setFullScreen,
     setPlayer,
-    Box
+    Box,
+    setRunningState,
+    setStartedState
 };
