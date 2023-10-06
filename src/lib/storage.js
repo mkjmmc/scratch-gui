@@ -38,6 +38,9 @@ class Storage extends ScratchStorage {
     setAuthorization(authorization) {
         this.authorization = authorization;
     }
+    setProjectToken (projectToken) {
+        this.projectToken = projectToken;
+    }
     getProjectGetConfig (projectAsset) {
         return {
             url: `${this.projectHost}/${projectAsset.assetId}`,
