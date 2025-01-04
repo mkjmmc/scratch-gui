@@ -4,104 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="Merge remote-tracking branch 'upstream/develop' into 20230210&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/components/gui/gui.jsx&#10;#&#9;src/components/menu-bar/menu-bar.jsx&#10;#&#9;src/lib/storage.js">
-      <change afterPath="$PROJECT_DIR$/.husky/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/commit-msg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renovate.json5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-bar/cat_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-bar/nineties_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-bar/oldtimey-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-bar/prehistoric-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/nineties-mode/nineties-mode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/nineties-mode/nineties-mode.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/nineties-mode/shapes.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/oldtimey-mode/oldtimey-mode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/oldtimey-mode/oldtimey-mode.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/oldtimey-mode/oldtimey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/oldtimey-mode/projector.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/oldtimey-mode/projector2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/prehistoric-mode/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/prehistoric-mode/prehistoric-mode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/prehistoric-mode/prehistoric-mode.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/prehistoric-mode/torch.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/libraries/decks/thumbnails/getting-started-asl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/time-travel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupt-bmp.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupt-bmp.sprite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupt-from-scratch3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupt-svg.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupt-svg.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupt-svg.sprite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/corrupted-svg.sprite2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/missing-bmp.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/missing-bmp.sprite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/missing-sprite-svg.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/missing-svg.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/missing-svg.sprite2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/missing-svg.sprite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/monitor-variable.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/scratch2-corrupted.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/unit/components/error-boundary-hoc.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+    <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="fix:云变量地址错误">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/action-menu/icon--camera.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/audio-trimmer/selection-handle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/audio-trimmer/selection-handle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/camera-modal/camera-modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/camera-modal/camera-modal.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/camera-modal/icon--back.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gui/gui.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gui/gui.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu-bar/menu-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu-bar/menu-bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu-bar/menu-bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu-bar/menu-bar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/monitor/monitor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/monitor/monitor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/monitor/monitor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/monitor/monitor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/prompt/prompt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/prompt/prompt.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/target-pane/target-pane.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/target-pane/target-pane.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/telemetry-modal/telemetry-modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/telemetry-modal/telemetry-modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/audio-trimmer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/audio-trimmer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/blocks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/blocks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/camera-modal.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/costume-tab.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/costume-tab.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/error-boundary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/error-boundary.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/gui.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/gui.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/monitor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/monitor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/prompt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/prompt.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/sound-library.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/sound-library.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/stage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/stage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/target-pane.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/target-pane.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/app-state-hoc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/app-state-hoc.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/blocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/cloud-manager-hoc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/cloud-manager-hoc.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/error-boundary-hoc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/error-boundary-hoc.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/file-uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/file-uploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/libraries/decks/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/libraries/decks/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/libraries/decks/translate-video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/libraries/decks/translate-video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/project-fetcher-hoc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/project-fetcher-hoc.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/video/modal-video-manager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/gui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/gui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/menus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/menus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/modals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/modals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/helpers/selenium-helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/helpers/selenium-helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/blocks.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/blocks.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/costumes.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/costumes.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/localization.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/localization.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/project-loading.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/project-loading.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/sb-file-uploader-hoc.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/sb-file-uploader-hoc.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/sounds.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/sounds.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/sprites.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/sprites.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/components/__snapshots__/sound-editor.test.jsx.snap" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/components/__snapshots__/sound-editor.test.jsx.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/components/menu-bar.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/components/menu-bar.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/components/monitor-list.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/components/monitor-list.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/util/cloud-manager-hoc.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/util/cloud-manager-hoc.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playground/render-gui.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/render-gui.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +74,11 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mkjmmc &lt;4824865@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="scratchfoundation-develop" />
@@ -318,19 +229,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging 20230210",
-    "last_opened_file_path": "/Users/maokejia/Desktop/work/1.小码蚁/88平台/scratch-gui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;20230210&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maokejia/Desktop/work/1.小码蚁/88平台/scratch-gui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/menu-bar" />
@@ -413,7 +324,13 @@
       <workItem from="1684116401189" duration="948000" />
       <workItem from="1686379432561" duration="6962000" />
       <workItem from="1690808159441" duration="874000" />
-      <workItem from="1696466755867" duration="1833000" />
+      <workItem from="1696466755867" duration="1921000" />
+      <workItem from="1723553010981" duration="815000" />
+      <workItem from="1723553852848" duration="794000" />
+      <workItem from="1732623907076" duration="1840000" />
+      <workItem from="1735900840892" duration="4077000" />
+      <workItem from="1735918454429" duration="2335000" />
+      <workItem from="1735993796168" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1583123831442</created>
@@ -478,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686379884674</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'upstream/develop' into 20230210&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/components/gui/gui.jsx&#10;#&#9;src/components/menu-bar/menu-bar.jsx&#10;#&#9;src/lib/storage.js">
+      <created>1696556486353</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696556486353</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -541,7 +465,10 @@
     <MESSAGE value="Merge branch 'develop' of https://github.com/LLK/scratch-gui into 0603&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/lib/libraries/costumes.json&#10;#&#9;src/lib/libraries/sprites.json" />
     <MESSAGE value="0607更新" />
     <MESSAGE value="Merge remote-tracking branch 'remotes/origin/20230209' into 20230210&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/index.js&#10;#&#9;src/playground/render-gui.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'remotes/origin/20230209' into 20230210&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/index.js&#10;#&#9;src/playground/render-gui.jsx" />
+    <MESSAGE value="Merge remote-tracking branch 'upstream/develop' into 20230210&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/components/gui/gui.jsx&#10;#&#9;src/components/menu-bar/menu-bar.jsx&#10;#&#9;src/lib/storage.js" />
+    <MESSAGE value="保存" />
+    <MESSAGE value="fix:云变量地址错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:云变量地址错误" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/reducers/cards.js">
