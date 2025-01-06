@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="fix:云变量地址错误">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/render-gui.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/render-gui.jsx" afterDir="false" />
+    <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/generated/microbit-hex-url.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/microbit/scratch-microbit-1.2.0.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,13 @@
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <favorite-branches>
       <branch-storage>
@@ -81,7 +88,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="scratchfoundation-develop" />
+        <entry key="$PROJECT_DIR$" value="20250104" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -249,7 +256,7 @@
       <recent name="$PROJECT_DIR$/src/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="index.jsx" type="NodeJSConfigurationType" temporary="true" path-to-js-file="index.jsx" working-dir="$PROJECT_DIR$/src/playground">
       <method v="2" />
     </configuration>
@@ -275,10 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Node.js.index.jsx" />
-        <item itemvalue="Node.js.index.jsx" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696556486353</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix: 忽略.idea文件夹">
+      <created>1736148914577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736148914577</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -468,7 +483,8 @@
     <MESSAGE value="Merge remote-tracking branch 'upstream/develop' into 20230210&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/components/gui/gui.jsx&#10;#&#9;src/components/menu-bar/menu-bar.jsx&#10;#&#9;src/lib/storage.js" />
     <MESSAGE value="保存" />
     <MESSAGE value="fix:云变量地址错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:云变量地址错误" />
+    <MESSAGE value="fix: 忽略.idea文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 忽略.idea文件夹" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/reducers/cards.js">
