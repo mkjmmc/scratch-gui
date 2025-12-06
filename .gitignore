@@ -18,3 +18,5 @@ npm-*
 /translations
 /locale
 /.idea/
+/yarn.lock
+/package-lock.json
