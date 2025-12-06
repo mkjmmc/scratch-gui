@@ -110,7 +110,7 @@ module.exports = [
             filename: '[name].js',
             // publicPath: 'http://scratch.yunqilab.com/'
             // 发布前修改
-            publicPath: "https://yzsteam.oss-cn-hangzhou.aliyuncs.com/"
+            // publicPath: "https://yzsteam.oss-cn-hangzhou.aliyuncs.com/"
         },
         module: {
             rules: base.module.rules.concat([

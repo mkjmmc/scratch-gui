@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generated/microbit-hex-url.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/microbit/scratch-microbit-1.2.0.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/libraries/extensions/text/text.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/libraries/extensions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/libraries/extensions/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="20250104" />
+        <entry key="$PROJECT_DIR$" value="20250106" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,6 +148,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/translations/messages/node_modules" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -240,17 +244,20 @@
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;20230210&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maokejia/Desktop/work/1.小码蚁/88平台/scratch-gui&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maokejia/Desktop/work/1.小码蚁/88平台/scratch-gui/node_modules/scratch-vm/src/extensions/scratch3_text&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/node_modules/scratch-vm/src/extensions/scratch3_text" />
+      <recent name="$PROJECT_DIR$/src/lib/libraries/extensions/mamale" />
       <recent name="$PROJECT_DIR$/src/components/menu-bar" />
       <recent name="$PROJECT_DIR$/src/reducers" />
       <recent name="$PROJECT_DIR$/src/lib" />
@@ -339,6 +346,12 @@
       <workItem from="1735900840892" duration="4077000" />
       <workItem from="1735918454429" duration="2335000" />
       <workItem from="1735993796168" duration="1192000" />
+      <workItem from="1736408077237" duration="1064000" />
+      <workItem from="1736411908470" duration="709000" />
+      <workItem from="1742371339095" duration="1758000" />
+      <workItem from="1743662489737" duration="856000" />
+      <workItem from="1752159255085" duration="1483000" />
+      <workItem from="1763611342758" duration="1837000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1583123831442</created>
@@ -417,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736148914577</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix: 移除谷歌统计">
+      <created>1752160678791</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752160678791</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -484,7 +504,8 @@
     <MESSAGE value="保存" />
     <MESSAGE value="fix:云变量地址错误" />
     <MESSAGE value="fix: 忽略.idea文件夹" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 忽略.idea文件夹" />
+    <MESSAGE value="fix: 移除谷歌统计" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 移除谷歌统计" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/reducers/cards.js">

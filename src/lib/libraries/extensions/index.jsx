@@ -46,6 +46,10 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+
+import textIconURL from './text/text.svg';
+import textInsetIconURL from './text/text.svg';
+
 export default [
     {
         name: (
@@ -317,5 +321,11 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    }, {
+        name: '文本',
+        extensionId: 'strings',
+        iconURL: textIconURL,
+        description: '处理字符与文本',
+        featured: true
     }
 ];
