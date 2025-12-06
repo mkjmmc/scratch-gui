@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/libraries/extensions/text/text.svg" afterDir="false" />
+    <list default="true" id="e20ac5d9-d728-42d2-9b18-2b4aa20ae43a" name="Default" comment="fix: 增加文字组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/libraries/extensions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/libraries/extensions/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,6 +349,7 @@
       <workItem from="1743662489737" duration="856000" />
       <workItem from="1752159255085" duration="1483000" />
       <workItem from="1763611342758" duration="1837000" />
+      <workItem from="1765021827856" duration="2173000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1583123831442</created>
@@ -437,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1752160678791</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix: 增加文字组件">
+      <created>1765021895641</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765021895641</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -505,7 +510,8 @@
     <MESSAGE value="fix:云变量地址错误" />
     <MESSAGE value="fix: 忽略.idea文件夹" />
     <MESSAGE value="fix: 移除谷歌统计" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 移除谷歌统计" />
+    <MESSAGE value="fix: 增加文字组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 增加文字组件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/reducers/cards.js">
